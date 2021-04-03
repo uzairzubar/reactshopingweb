@@ -1,0 +1,23 @@
+.productHeader{
+    position: relative;
+    overflow: hidden;
+}
+.productAddToCart{
+    color: white;
+    width: 85%;
+    padding: 10px;
+    opacity: 0;
+    background-color: green;
+    position: absolute;
+}
+.productHeader:hover .productAddToCart{
+    /*background-color: black;*/
+    bottom: 24px;
+    /*display: block;*/
+    transform: translate(10px, -60px);
+    transition: .3s ease;
+    color:beige;
+    text-align: center;
+    /*font-size: 20px;*/
+    opacity: 1 ;
+}
