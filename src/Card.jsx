@@ -14,7 +14,7 @@ import Products from "./Products";
 export default function Card() {
     return(
         <>
-            <CarouselSlider/>
+           <CarouselSlider/>
                 <div>
                     <div className={" bg-dark mx-5"}><h2 className={"text-white"}>
                         <center>Our Services

@@ -44,7 +44,9 @@ export default function CarouselSlider() {
     ]
     return(
         // <this is all atribute define its website></this>
+
         <Carousel
+            showArrows={true} showThumbs={true}
             autoPlay={true}
             useKeyboardArrows={true}
             stopOnHover={true}
@@ -54,7 +56,7 @@ export default function CarouselSlider() {
                 slideData.map((data) =>
 
                     <div>
-                        <image src={data.url} alt={"image"} />
+                        <img src={data.url} alt="img" />
                         <Link to={data.web}>
                             <p className="legend">
                                 {data.name}

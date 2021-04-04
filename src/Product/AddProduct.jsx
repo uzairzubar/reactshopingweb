@@ -55,7 +55,9 @@ export default function AddProduct() {
     }
     return(
         <Container>
+
             <Box my={5}>
+
                 <Typography align={"center"}color={"textSecondary"} variant={"h3"} className={"mb-4"}>Add Product</Typography>
 
                 <Snackbar
