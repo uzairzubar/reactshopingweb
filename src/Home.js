@@ -64,7 +64,6 @@ export default function Home() {
 }
     return(
         <Box>
-            {JSON.stringify(cart)}
         <Router>
             <Navbar bg="success" expand="lg">
                 <Navbar.Brand Link={"/"} ><StorefrontIcon style={{ fontSize: 50 }}></StorefrontIcon>MYSHOOP@</Navbar.Brand>
@@ -145,7 +144,9 @@ export default function Home() {
                 </div>
             </Navbar>
             <Switch>
-                <Route path={"/card"}>
+                <Route path={"/"} exact>
+                    <Card/>
+                </Route><Route path={"/card"}>
                     <Card/>
                 </Route>
                 <Route path={"/contact"}>

@@ -50,7 +50,6 @@ export default function LogIn() {
     const userLogged = (event) => {
         event.preventDefault()
         const userLoggedValues = {
-            name: user.name,
             email: user.email,
             phone: user.phone,
             password: user.password
