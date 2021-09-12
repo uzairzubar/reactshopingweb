@@ -40,7 +40,8 @@ export default function ViewSignalProduct(props) {
 
     React.useEffect(()=> {
         getSingleData()
-    })
+    },)
+    // },[])
 
     let productData
 

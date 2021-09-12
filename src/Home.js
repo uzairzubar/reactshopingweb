@@ -21,6 +21,7 @@ import ToolTip from "./ToolTip";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import {Box} from "@material-ui/core";
 
+
 import AddProduct from "./Product/AddProduct";
 import ViewProduct from "./Product/ViewProduct";
 import ViewSingleProduct from "./Product/ViewSingleProduct";
@@ -66,7 +67,7 @@ export default function Home() {
         <Box>
         <Router>
             <Navbar bg="success" expand="lg">
-                <Navbar.Brand Link={"/"} ><StorefrontIcon style={{ fontSize: 50 }}></StorefrontIcon>MYSHOOP@</Navbar.Brand>
+                <Navbar.Brand Link={"/"} ><StorefrontIcon style={{ fontSize: 50 }}></StorefrontIcon>E-STORE</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
@@ -89,7 +90,7 @@ export default function Home() {
                         {!localStorage.getItem('loginEmail') && (
                             <>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/login">LOG-IN</NavDropdown.Item>
+                            {/*<NavDropdown.Item href="/login">LOG-IN</NavDropdown.Item>*/}
                             <NavDropdown.Item href="/Register">REGISTER</NavDropdown.Item>
                             <NavDropdown.Item href="/welcome">WELcome</NavDropdown.Item>
                         </NavDropdown>
